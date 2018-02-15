@@ -1,8 +1,20 @@
+/* ---- reset ---- */
+
 body {
   margin: 0;
-  padding: 0;
+  background-color: #ffffff;
 }
 
-#row-1 {
-  background-color: #000000 !important;
+canvas {
+  display: block;
+  vertical-align: bottom;
+}
+
+
+/* ---- particles.js container ---- */
+
+#particles-js {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
