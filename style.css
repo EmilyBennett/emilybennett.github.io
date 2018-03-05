@@ -16,6 +16,12 @@ canvas {
   vertical-align: bottom;
 }
 
+svg {
+  padding: 0 !important;
+  margin: 0 !important;
+
+}
+
 /* ---- particles.js container ---- */
 
 #particles-js {
