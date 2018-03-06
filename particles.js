@@ -21,7 +21,7 @@ particlesJS("particles-js",
         "nb_sides": 5
       },
       "image": { //check if updated
-        "src": "./images/bubble.svg",
+        "src": "./images/flare-bubble.png",
         "width": 100,
         "height": 100
       }
@@ -72,7 +72,7 @@ particlesJS("particles-js",
     "detect_on": "canvas",
     "events": {
       "onhover": {
-        "enable": true,
+        "enable": false,
         "mode": "bubble"
       },
       "onclick": {
