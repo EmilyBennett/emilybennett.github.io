@@ -17,6 +17,10 @@ body {
   background-color: #ffffff;
 }
 
+.bg-4 {
+  background-color: #ffffff;
+}
+
 .particles-js {
   background-color: #5EA0C3; /* For browsers that do not support gradients */
   background-color: -webkit-linear-gradient(115deg, #5EA0C3 , #684AA0);
