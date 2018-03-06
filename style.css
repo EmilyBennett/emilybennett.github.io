@@ -5,6 +5,18 @@ body {
   background-color: transparent !important;
 }
 
+.bg-1 {
+  background-color: #ffffff;
+}
+
+.bg-2 {
+  background-color: #ffffff;
+}
+
+.bg-3 {
+  background-color: #ffffff;
+}
+
 .particles-js {
   background-color: #5EA0C3; /* For browsers that do not support gradients */
   background-color: -webkit-linear-gradient(115deg, #5EA0C3 , #684AA0);
@@ -24,6 +36,6 @@ body {
 
   position: absolute;
   width: 100%;
-  height: 100%;
+  height: inherit;
   z-index: -1;
 }
