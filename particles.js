@@ -9,19 +9,19 @@ particlesJS("particles-js",
       }
     },
     "color": {
-      "value": "#ff0000"
+      "value": "#f0d9de"
     },
     "shape": {
-      "type": "circle",
+      "type": "image",
       "stroke": {
         "width": 0,
-        "color": "#55b3e3"
+        "color": "#f0d9de"
       },
       "polygon": {
         "nb_sides": 5
       },
       "image": {
-        "src": "./container_particle.png",
+        "src": "./images/bubble.svg",
         "width": 100,
         "height": 100
       }
