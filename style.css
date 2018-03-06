@@ -5,9 +5,16 @@ body {
   background-color: transparent !important;
 }
 
+.section1 {
+  position:absolute;
+  background-color: transparent !important;
+  opacity:0.5;
+}
+
 .container-fluid {
   box-shadow: 0 1px 2px 0 #d4d4d5, 0 -1px 2px 0 #d4d4d5;
 }
+
 .bg-1 {
   background-color: #ffffff;
 }
@@ -24,15 +31,11 @@ body {
   background-color: #ffffff;
 }
 
-.particles-js {
-  background-color: #5EA0C3; /* For browsers that do not support gradients */
-  background-color: -webkit-linear-gradient(115deg, #5EA0C3 , #684AA0);
-  background-color: -o-linear-gradient(115deg, #5EA0C3 , #684AA0);
-  background-color: -moz-linear-gradient(115deg, #5EA0C3 , #684AA0);
-  background-color: linear-gradient(115deg, #5EA0C3 , #684AA0);
-}
+.particles-js {}
 
 /* ---- particles.js container ---- */
+
+
 
 #particles-js canvas{
   background-color: #5EA0C3; /* For browsers that do not support gradients */
@@ -41,7 +44,7 @@ body {
   background: -moz-linear-gradient(115deg, #5EA0C3 , #684AA0);
   background: linear-gradient(115deg, #5EA0C3 , #684AA0);
 
-  position: absolute;
+  position: relative;
   width: 100%;
   height: inherit;
   z-index: -1;
