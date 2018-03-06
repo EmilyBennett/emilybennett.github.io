@@ -20,7 +20,7 @@ particlesJS("particles-js",
       "polygon": {
         "nb_sides": 5
       },
-      "image": {
+      "image": { //check if updated
         "src": "./images/bubble.svg",
         "width": 100,
         "height": 100
