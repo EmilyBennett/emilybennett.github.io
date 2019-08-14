@@ -5,7 +5,7 @@ $(document).ready(function(){
   var rounds = 20;
 
   for (var i = 0; i < 6; i++) {
-    $("#player-display").append(`<img src="playerdoll.svg" alt="Player" data-index="${i}" class="image-container" width=50px>`);
+    $("#player-display").append(`<img src="playerdoll.svg" alt="Player" data-index="${i}" class="image-container" width=40px>`);
   }
 
   $players = $("#player-display").children(); //assign all children
