@@ -72,17 +72,17 @@ $(document).ready(function(){
   function addTable(index) {
 
     //Add table head
-    $("#player-table").append('<thead class="thead-dark"><tr>');
+    $("#player-table").append('<thead><tr>');
     for (var p = 0; p <= index; p++) {
-      $("#player-table").append(`<th class="text-center" contenteditable="true">Player</th>`);
+      $("#player-table").append(`<th class="text-center" style="width: 16.66%" contenteditable="true">Player</th>`);
     };
     $("#player-table").append('</thead></tr>');
 
     //Add table body
-    for (var i = 0; i <= rounds; i++) { //add columns ccording to number of players
+    for (var i = 0; i <= rounds; i++) { //add rows for rounds
     $("#player-table").append('<tr>');
     for (var j = 0; j <= index; j++) { //add columns ccording to number of players
-      $("#player-table").append(`<td class="pt-3-half" contenteditable="true"></td>`);
+      $("#player-table").append(`<td class="pt-1" style="width: 16.66%" contenteditable="true"></td>`);
     };
     $("#player-table").append('</tr>');
     };

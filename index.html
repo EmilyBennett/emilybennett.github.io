@@ -5,6 +5,7 @@
 	<meta charset="utf-8">
 	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=no" name="viewport"><!---Open source font from google=-->
   <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+	<link href="https://afeld.github.io/emoji-css/emoji.css" rel="stylesheet">
   <link rel="stylesheet" href="./style.css">
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
@@ -14,32 +15,21 @@
 </head>
 <body>
 
-	<!-- Editable table -->
 
-<div class="jumbotron jumbotron-fluid">
-  <div class="container">
-  <div class="text-center p-2" id="player-display"></div>
-		<container ></container> <!--Player ID -->
 
-  <div class="card">
-	    <div id="table" class="table-editable">
-	      <!--<span class="table-add float-right mb-3 mr-2"><a href="#!" class="text-success"><i
-	            class="fas fa-plus fa-2x" aria-hidden="true"></i></a></span> -->
-	      <table class="table table-hover table-bordered table-responsive-md table-striped text-center" id="player-table">
-	      <tbody id="player-table">
 
-	      </tbody>
-	      </table>
-	    </div>
+<div class="jumbotron pb-1 mb-1">
+  <div class="container text-center" id="player-display"></div>
+</div>
+
+<div class="jumbotron pt-1 mt-1">
+	<div class="container text-center pt-0 mt-0" id="player-display">
+		<div class="card" style="max-width: 100rem">
+				<table class="table table-bordered table-editable text-center" id="player-table"></table>
+				<div class="container text-center"><i class="em em-heart"></i></div>
+		</div>
 	</div>
-
 </div>
-</div>
-</div>
-</div>
-
-
-
 
 	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109949643-1"></script>
 	<script src="appeditablecolumns.js"></script>
