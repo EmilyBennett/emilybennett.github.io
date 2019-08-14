@@ -2,7 +2,65 @@
 
 body {
   margin: 0;
-  background-color: transparent !important;
+  background-color: #e9ecef !important;
+  /* background-image: url("pattern.png"); */
+  background-size: 200px;
+  background-repeat: repeat-xy;
+}
+
+.players-choosing {
+}
+
+.btn:hover {
+  background-color: #e9ecef !important;
+  border-color: #e9ecef !important;
+  background-color: #e9ecef !important;
+}
+
+.btn:active,
+.active {
+  color:#e9ecef !important;
+  background-color: #e9ecef !important;
+  border-color: #e9ecef !important;
+  background-color: #e9ecef !important;
+}
+
+.btn-secondary {
+    background-color: #transparent !important;
+
+}
+
+.btn-secondary:hover, .btn-secondary:active, .btn-secondary:visited {
+    background-color: #transparent !important;
+}
+
+/* Make the image to responsive */
+.image-icon {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .3s ease;
+}
+
+/* When you mouse over the container, fade in the overlay icon*/
+.container:hover .overlay {
+  opacity: 1;
+}
+
+.h1 {
+  font-family: 'Teko', serif;
+  font-size: 48px;
 }
 
 .section1 {
@@ -11,24 +69,33 @@ body {
   opacity:0.5;
 }
 
+.jumbotron {
+  background-color: #F5F5F5;
+}
+
 .container-fluid {
   box-shadow: 0 1px 2px 0 #d4d4d5, 0 -1px 2px 0 #d4d4d5;
+  font-family: 'Teko', sans-serif;
 }
 
 .bg-1 {
-  background-color: #ffffff;
+  background-color: #e9ecef;
 }
 
 .bg-2 {
-  background-color: #ffffff;
+  background-color: #e9ecef;
 }
 
 .bg-3 {
-  background-color: #ffffff;
+  background-color: #e9ecef;
 }
 
 .bg-4 {
-  background-color: #ffffff;
+  background-color: #e9ecef;
+}
+
+.card {
+  border-radius: 50px;
 }
 
 .particles-js {}

@@ -2,6 +2,7 @@ $(document).ready(function(){
 
   var titles = ['1 Player', '2 Player', '3 Player', '4 Player', '5 Player','6 Player'];
   var state = 0;
+  var rounds = 20;
 
   for (var i = 0; i < 6; i++) {
     $("#player-display").append(`<img src="playerdoll.svg" alt="Player" data-index="${i}" class="image-container" width=50px>`);
@@ -17,7 +18,7 @@ $(document).ready(function(){
     //mark all objects
     var index = $(this).attr('data-index');
     markplayersAsActive(index);
-
+    removeTable(); //safeguard, remove table before adding a new table every time
 
     if (($("#player-display").hasClass('players-choosing'))) {
       $("#player-display").removeClass('players-choosing');
@@ -29,10 +30,9 @@ $(document).ready(function(){
       $("#player-display").removeClass('players-selected');
       console.log("added players choosing")
       $("#player-display").addClass('players-choosing');
-      hoverOn()
-      removeTable();
+      hoverOn();
     } else {
-      console.log("couldn't switch")
+      console.log("error - couldn't switch")
     }
 
 
@@ -70,9 +70,23 @@ $(document).ready(function(){
   }
 
   function addTable(index) {
-    for (var i = 0; i <= index; i++) {
-      $("#player-table").append(`<tr><td class="pt-3-half" contenteditable="true">Player</td></tr>`);
-    }
+
+    //Add table head
+    $("#player-table").append('<thead class="thead-dark"><tr>');
+    for (var p = 0; p <= index; p++) {
+      $("#player-table").append(`<th class="text-center" contenteditable="true">Player</th>`);
+    };
+    $("#player-table").append('</thead></tr>');
+
+    //Add table body
+    for (var i = 0; i <= rounds; i++) { //add columns ccording to number of players
+    $("#player-table").append('<tr>');
+    for (var j = 0; j <= index; j++) { //add columns ccording to number of players
+      $("#player-table").append(`<td class="pt-3-half" contenteditable="true"></td>`);
+    };
+    $("#player-table").append('</tr>');
+    };
+
   }
 
   function removeTable(index) {
@@ -80,8 +94,6 @@ $(document).ready(function(){
   }
 
 });
-
-
 
 
 const $tableID = $('#table');

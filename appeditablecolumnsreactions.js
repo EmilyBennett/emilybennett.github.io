@@ -1,7 +1,7 @@
 $(document).ready(function(){
 
-  var titles = ['1 Player', '2 Player', '3 Player', '4 Player', '5 Player','6 Player'];
   var state = 0;
+  var rounds = 20;
 
   for (var i = 0; i < 6; i++) {
     $("#player-display").append(`<img src="playerdoll.svg" alt="Player" data-index="${i}" class="image-container" width=50px>`);
@@ -17,7 +17,7 @@ $(document).ready(function(){
     //mark all objects
     var index = $(this).attr('data-index');
     markplayersAsActive(index);
-
+    removeTable(); //safeguard, remove table before adding a new table every time
 
     if (($("#player-display").hasClass('players-choosing'))) {
       $("#player-display").removeClass('players-choosing');
@@ -29,16 +29,14 @@ $(document).ready(function(){
       $("#player-display").removeClass('players-selected');
       console.log("added players choosing")
       $("#player-display").addClass('players-choosing');
-      hoverOn()
-      removeTable();
+      hoverOn();
     } else {
-      console.log("couldn't switch")
+      console.log("error - couldn't switch")
     }
-
-
-
-
   });
+  //setup listener for master mix
+  setupClickListener()
+
 
   function hoverOn() {
     $players.on('mouseover', function () {
@@ -70,18 +68,64 @@ $(document).ready(function(){
   }
 
   function addTable(index) {
-    for (var i = 0; i <= index; i++) {
-      $("#player-table").append(`<tr><td class="pt-3-half" contenteditable="true">Player</td></tr>`);
-    }
+
+    const indexr = index+1;
+
+    //Add table body for reactions
+    for (var i = 0; i <= index; i++) { //add rows according to number of reactions
+    $("#player-table").append('<tr>');
+
+    for (var j = 0; j <= 2; j++) {
+      $("#player-table").append(`<td class="pt-3-half" contenteditable="true"></td>`);
+    };
+
+    //add fixed columns
+    $("#player-table").append('<td class="pt-3-half" contenteditable="false"><button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" id="H2O">28 µl</button></td>');
+    $("#player-table").append('<td class="pt-3-half" contenteditable="false"><button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" id="KOD-B">5 µl</button></td>');
+    $("#player-table").append('<td class="pt-3-half" contenteditable="false"><button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" id="dNTPs">5 µl</button></td>');
+    $("#player-table").append('<td class="pt-3-half" contenteditable="false"><button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false" id="MgSO4">4 µl</button></td>');
+    $("#player-table").append('<td class="pt-3-half" contenteditable="false"><button type="button" class="btn btn-danger" data-toggle="button" aria-pressed="false">1 µl</button></td>');
+
+    $("#player-table").append('</tr>');
+    };
+
+    //Add totals footer
+    $("#player-table").append('<tr class="table-dark">');
+    $("#player-table").append(`<td class="pt-3-half" colspan="3" contenteditable="false">Master Mix: Add ${28+5+5+4} µl per reaction</td>`);
+    $("#player-table").append(`<td class="pt-3-half" contenteditable="false"><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" id="H2O">${28*index + 28}µl</button></td>`);
+    $("#player-table").append(`<td class="pt-3-half" contenteditable="false"><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" id="KOD-B">${5*index + 5}µl</button></td>`);
+    $("#player-table").append(`<td class="pt-3-half" contenteditable="false"><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" id="dNTPs">${5*index + 5}µl</button></td>`);
+    $("#player-table").append(`<td class="pt-3-half" contenteditable="false"><button type="button" class="btn btn-primary" data-toggle="button" aria-pressed="false" id="MgSO4">${4*index + 4}µl</button></td>`);
+    $("#player-table").append(`<td class="pt-3-half" contenteditable="false"></td>`);
+    $("#player-table").append('</tr>');
+
+
+
+
   }
 
   function removeTable(index) {
     $("#player-table").empty();
   }
 
+  function setupClickListener() { //index is number of reactions -
+
+    //add all values to list
+    $trs = $("#player-table").find('tr'); //find table row 1
+    $tds = $tds.find('td'); //find table row 1
+
+    $overridebuttons = $tds.find('btn btn-primary'); //find buttons
+    $buttons = $tds.find('btn btn-danger'); //find buttons
+
+    $overridebuttons.on('click', function () {
+      $buttons.attr("aria-pressed","false"); //unpress all buttons
+    })
+
+  }
+
+
+
 });
-
-
 
 
 const $tableID = $('#table');
