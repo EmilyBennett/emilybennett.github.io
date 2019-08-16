@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1, shrink-to-fit=no user-scalable=no" name="viewport"><!---Open source font from google=-->
+  <link href="https://fonts.googleapis.com/css?family=Teko&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="./style_no_buttons.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+	<script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+
+<div class="container text-center">
+<br>
+<br>
+<div class="row">
+	<div class="col-sm-4">
+		<h2>Cells</h2>
+		<div class="card bg-danger " style="">
+			<br>
+			<p class="text-white">OD600 of Cells</p>
+			<div class="card m-3" style="">
+				<table class="table table-editable text-center" id="input-table">
+					<tr><td class="pt-3-half" style="" contenteditable="true" id="my-contenteditable-div"></td></tr>
+				</table>
+			</div>
+			<button type="button" class="btn btn-danger btn-block m-0" data-toggle="button" id="calculate">Calculate</button>
+		</div>
+	</div>
+	<div class="col-sm-4">
+		<h2>OD600 = 0.1</h2>
+		<div class="card bg-danger " style="">
+			<br>
+			<p class="text-white">1 µl or 1ml cells</p>
+			<h3 class="text-white font-weight-bold" id="result_0_1">&nbsp</h3>
+			<p class="text-white">µl/ml Media</p>
+		</div>
+
+		<div class="card bg-danger " style="">
+			<br>
+			<p class="text-white">10 µl or 10ml cells</p>
+			<h3 class="text-white font-weight-bold" id="result_0_1_extra">&nbsp</h3>
+			<p class="text-white">µl/ml Media</p>
+		</div>
+
+		<div class="card bg-warning " style="">
+				<br>
+				<h3 class="text-white font-weight-bold" id="result_0_1_8ml">&nbsp</h3>
+				<p class="text-white">ml of cells in 8ml total Media</p>
+
+				<h3 class="text-white font-weight-bold" id="result_0_1_8ml_ul">&nbsp</h3>
+				<p class="text-white">µl of cells in 8ml total Media</p>
+
+		</div>
+
+
+	</div>
+
+	<div class="col-sm-4">
+		<h2>OD600 = 0.01</h2>
+		<div class="card bg-info " style="">
+			<br>
+			<p class="text-white">1 µl or 1ml cells</p>
+			<h3 class="text-white font-weight-bold" id="result_0_01">&nbsp</h3>
+			<p class="text-white">µl/ml Media</p>
+		</div>
+
+		<div class="card bg-info " style="">
+			<br>
+			<p class="text-white">10 µl or 10ml cells</p>
+			<h3 class="text-white font-weight-bold" id="result_0_01_extra">&nbsp</h3>
+			<p class="text-white">µl/ml Media</p>
+		</div>
+
+		<div class="card bg-warning " style="">
+				<br>
+				<h3 class="text-white font-weight-bold" id="result_0_01_8ml">&nbsp</h3>
+				<p class="text-white">ml of cells in 8ml total Media</p>
+
+				<h3 class="text-white font-weight-bold" id="result_0_01_8ml_ul">&nbsp</h3>
+				<p class="text-white">µl of cells in 8ml total Media</p>
+
+		</div>
+
+	</div>
+	</div>
+
+</div>
+</div><br>
+
+
+
+
+
+	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-109949643-1"></script>
+	<script src="appdilution_calculator_od600.js"></script>
+</body>
+</html>
