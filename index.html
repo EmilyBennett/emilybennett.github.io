@@ -34,7 +34,7 @@
     }
 
     .jumbotron {
-      background-color: #5348f0ff;
+      background-color: transparent !important;
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
@@ -302,10 +302,21 @@
 
     /* ---- particles.js container ---- */
 
+    /* the #id of your div */
     #particles-js {
-      width: 100%;
-      height: 500px;
-      padding-bottom: 0px;
+        /* stay in a constant spot on the page, regardless of scroll */
+        position: fixed;
+        background-color: #5348f0ff;
+        /* fill the entire page */
+        width: 100%;
+        height: 100%;
+        /* remove the space along the edges */
+        margin: 0;
+        padding: 0;
+        /* position it to start at the top of the page */
+        top: 0;
+        /* put it behind other content */
+        z-index: -1;
     }
 
   </style>
@@ -313,111 +324,26 @@
 
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
 
-  <nav class="navbar navbar-default navbar-fixed-top">
-    <div class="container">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-        <a class="navbar-brand" href="#myPage">Logo</a>
-      </div>
-      <div class="collapse navbar-collapse" id="myNavbar">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="#instructions">Instructions</a></li>
-        </ul>
-      </div>
-    </div>
-  </nav>
 
-  <div class="jumbotron text-center" id=particles-js>
+  <div id=particles-js>
     <!-- particles.js container -->
-    <h1>Hack the Mask</h1>
-    <p>Entry #1</p>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
     </script>
+
   </div>
 
-  <div class="container text-center" id=about>
-    <h2>About</h2>
-    <p>Rubber band mask adapter. Uses an existing mask and 3 rubber bands to create a tight seal which does not put pressure on the ears or nose. Can be mass manufactured with some small modifications (e.g using rubber and fabric instead of elastic bands, and a laser cutter.) </p>
+
+  <div class="jumbotron text-center">
+    <h1>Hack the Mask</h1>
+    <h2><a href="./original.html" style="color:white">Design 1 - Making at home</a></br>
+    <a href="./noseclips.html" style="color:white">Design 2 - Making at a makerspace</a></h2>
   </div>
 
-  <div class="container text-center" id="instructions">
-    <h2>Instructions</h2>
-    <h4>Materials Required:</br>1 x Surgical Mask</br>3 x Large Rubber Band</h4>
-    <div class="row">
-      <div class="col-md-6">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h3>Step 1</h3>
-            <img src="1.png" alt="Cut according to lines" width=100%>
-            </br>
-            <p>Cut along lines shown in orange and remove mask material. Make sure to leave a little extra under the nose bar to ensure it doesnt come undone.</p>
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h3>Step 2</h3>
-            <img src="2.png" alt="Cut according to lines" width=100%>
-            <p>Fold the nose bar exactly halfway. Place the nose bar over your face ensuring the center point is on the bridge of your nose. Use a pencil to mark where the nose meets the cheek.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-6 d-flex align-items-stretch">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h3>Step 3</h3>
-            <img src="3.png" alt="Cut according to lines" width=100%>
-            <p>Using the lines that you have drawn, loop the elastic bands over the nose bar. Position the chin strap as shown. Tie the ends of the ear loops loosely around both rubber bands as shown. Repeat for both sides.</p>
-
-          </div>
-        </div>
-      </div>
-      <div class="col-md-6 d-flex align-items-stretch">
-        <div class="panel panel-default w-100 p-3">
-          <div class="panel-body">
-            <h3>Step 4</h3>
-            <img src="4.png" alt="Cut according to lines" width=100%>
-            <p>Place the mask over your face and the chin elastic below the chin. Adjust the fit of the mask so both elastic bands are flat against the face. When you are happy with the fit, tie a double knot to permanently secure the ear loops, cutting
-              away any excess.</p>
-          </div>
-        </div>
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-sm-12">
-        <div class="panel panel-default">
-          <div class="panel-body">
-            <h1>Completed Mask</h1>
-            <img src="5.png" alt="Cut according to lines" width=50%>
-            <p></p>
-          </div>
-        </div>
-      </div>
-    </div>
 
   </div>
 
 
 
-
-  <footer class="container-fluid text-center">
-    <a href="#myPage" title="To Top">
-    <span class="glyphicon glyphicon-chevron-up"></span>
-  </a>
-    <p>Emily Bennett 2020</p>
-  </footer>
 
   <script>
     //Javascript Particles
