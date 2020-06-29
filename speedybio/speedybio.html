@@ -6,38 +6,31 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
-
     body {
-      font: 400 10px, sans-serif;
+      font: 400 20px Lato, sans-serif;
       line-height: 1.8;
-      color: #818181;
+      color: #303030 !important;
+      background-color: #ffff;
     }
-
-    p {
-      font-family: sans-serif;
-      font-weight: lighter;
-      font-size: 20px !important;
-    }
-
 
     h1 {
-      font-size: 160px !important;
       font-family: Concert One;
-      text-transform: uppercase;
-      color: #303030 !important;
+      font-size: 100px !important;
+      color: #fff !important;
     }
 
     h2 {
       font-family: Concert One;
-      font-size: 24px;
+      font-size: 34px;
       text-transform: uppercase;
-      color: #8a8a8a;
+      color: #fff;
       font-weight: 600;
       margin-bottom: 30px;
     }
@@ -53,25 +46,37 @@
 
     h4 {
       font-size: 24px;
+      font-family: Lato, sans-serif;
       line-height: 1.375em;
-      color: #303030;
+      color: #303030 !important;
       font-weight: 400;
       margin-bottom: 30px;
     }
 
     .jumbotron {
-      background-color: #fff;
+      background-color: #5348f0ff;
       color: #fff;
-      padding: 100px 25px;
-      font-family: Montserrat, sans-serif;
+      padding: 20px 25px;
+      font-family: Lato, sans-serif;
     }
 
+
     .container-fluid {
-      padding: 60px 50px;
+      background-color: #5348f0ff;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Lato, sans-serif;
     }
 
     .bg-grey {
-      background-color: #f6f6f6;
+      background-color: #5348f0ff;
+    }
+
+    .center {
+      display: block;
+      margin-left: auto;
+      margin-right: auto;
+      width: 50%;
     }
 
     .logo-small {
@@ -175,7 +180,7 @@
 
     .navbar {
       margin-bottom: 0;
-      background-color: #34eba8;
+      background-color: #5348f0ff;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -330,7 +335,7 @@
 
     #particles-js {
       width: 100%;
-      height: 400px;
+      height: 500px;
       padding-bottom: 0px;
     }
 
@@ -347,62 +352,70 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class="navbar-brand" href="#myPage">:)</a>
+        <a class="navbar-brand" href="#myPage"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
+          <li><a href="#product">PRODUCT</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#instructions">Instructions</a></li>
+          <li><a href="#about">ABOUT</a></li>
         </ul>
       </div>
     </div>
   </nav>
+<div class="container-fluid text-center" style="background-color: #5348f0ff; color: #fff;" id=particles-js>
+  <!-- particles.js container -->
+  <h1>SPEEDY BIO</h1>
+  <h2>incubation in the post for <b>speedy<b/> results</h2>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+  </script>
+</div>
 
-  <div class="jumbotron text-center" id=particles-js>
-    <!-- particles.js container -->
-    <h1>Speedy Bio</h1>
-    <h2>incubation in the post for <b>speedy<b/> results</h2>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
-    </script>
-  </div>
+<div class="container-fluid" id=about>
+  <h3>Laboratory space is <font color=#EB5054>expensive</font></h3>
+  <p>In a post-COVID world, research labs are stretched to capacity. Social distancing means that <b>fewer researchers</b> can work at the bench at the same time.</p>
+  <p></p>
+</div>
 
-  <div class="container text-center" id=about>
-    <h3>Laboratory space is <font color=#EB5054>expensive</font></h3>
-    <p>In a post-COVID world, research labs are stretched to capacity. Social distancing means that <b>fewer researchers</b> can work at the bench at the same time.</p>
-    <p></p>
-  </div>
+<div class="container-fluid">
+  <h3>A researcher's time is <font color=#EB5054>valuable</font></h3>
+  <p>Researchers don't want to spend time on repetitive tasks which are easily automatable</p>
+</div>
 
-  <div class="container text-center" id=about>
-    <h3>A researcher's time is <font color=#EB5054>valuable</font></h3>
-    <p>Researchers don't want to spend time on repetitive tasks which are easily automatable</p>
-  </div>
+<div class="container-fluid" style="background-image: url(background1.png); background-size: cover;">
+  <h2>Quicker results = <font color=#EB5054>faster innovation</font></h2>
+  <p>Increasing the turnaround speed for building to sequencing allows scientists <b>to make decisions faster</b></p>
+  <p>We are building a low-cost incubator <b>that you can send in the post</b></p>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+</div>
 
-  <div class="container text-center" id=about>
-    <h3>Quicker results = <font color=#EB5054>faster innovation</font></h3>
-    <p>Increasing the turnaround speed for building to sequencing allows scientists <b>to make decisions faster</b></p>
-  </div>
+<div class="jumbotron" style="background-color: white !important;" id=product>
+  <h3>the problem<font color=#EB5054></font></h3>
+  <p><font color=#303030>Researchers working in molecular biology laboratories often need to read the sequence of DNA in bacterial cells. This involves a labour intensive step of growing those cells for 2 days, first overnight on solid media, then in liquid media in order to amplify the DNA so it can be read by a sequencing machine. This takes up a lot of researcher time and laboratory space. We propose that by sending samples in a low-cost insulated envelope with an inbuilt temperature controller we can save time and resources and offer a way for researchers to receive their results faster.</font></p>
+  <img src="researcher_diagram.png" width=60% class="center"></img>
 
-  </div>
+</div>
 
-  <div class="container text-center" id=model>
-    <h3><font color=#EB5054>23 hours saved</font></h3>
-    <p>Increasing the turnaround speed for building to sequencing allows scientists <b>to make decisions faster</b></p>
-    <img src="researcher_diagram.png" width=500px></img>
-    <p></p>
-  </div>
+<div class="jumbotron my-4" style="background-color: white !important;" id=product>
+  <h3>A <font color=#EB5054>low cost</font> solution</h3>
+  <p><font color=#303030>We have developed a <b>low cost, lightweight reusable device</b> which can be used to incubate samples during transit, so they arrive at the location ready to be sequenced. The petri dish clips into place and the entire device is placed in an insulated envelope. On arrival, the bacterial colonies have grown and can be sequenced immediately.</font></p>
+<div class="text-center">
 
-  </div>
-
-
-
+ <script src="https://embed.github.com/view/3d/EmilyBennett/emilybennett.github.io/master/speedybio/incubot_3d_stl.stl" width=500px class="center"></script></div>
+</div>
+</div>
 
   <footer class="container-fluid text-center">
     <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-    <p>Emily Bennett 2020</p>
+    <p>Emily Bennett James Lawson 2020</p>
   </footer>
 
   <script>
@@ -410,20 +423,20 @@
     particlesJS("particles-js", {
       "particles": {
         "number": {
-          "value": 40,
+          "value": 80,
           "density": {
             "enable": true,
             "value_area": 800
           }
         },
         "color": {
-          "value": "#34eba8"
+          "value": "#ffffff"
         },
         "shape": {
           "type": "circle",
           "stroke": {
             "width": 0,
-            "color": "#34eba8"
+            "color": "#000000"
           },
           "polygon": {
             "nb_sides": 5
@@ -445,7 +458,7 @@
           }
         },
         "size": {
-          "value": 10,
+          "value": 3,
           "random": true,
           "anim": {
             "enable": false,
@@ -457,13 +470,13 @@
         "line_linked": {
           "enable": true,
           "distance": 150,
-          "color": "#34eba8",
+          "color": "#ffffff",
           "opacity": 0.4,
-          "width": 4
+          "width": 1
         },
         "move": {
           "enable": true,
-          "speed": 4,
+          "speed": 6,
           "direction": "none",
           "random": false,
           "straight": false,
@@ -519,12 +532,26 @@
     });
     var
       count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles =
+      document.querySelector('.js-count-particles');
+    update = function() {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);;
+
 
     $(document).ready(function() {
-
-
-
-      // .style.setAttribute("data-color","0x5efc03");
 
       // Add smooth scrolling to all links in navbar + footer link
       $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -559,7 +586,6 @@
         });
       });
     })
-
   </script>
 
 </body>
