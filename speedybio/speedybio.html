@@ -8,19 +8,45 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
+
     body {
-      font: 400 20px Lato, sans-serif;
+      font: 400 10px, sans-serif;
       line-height: 1.8;
       color: #818181;
     }
 
+    p {
+      font-family: sans-serif;
+      font-weight: lighter;
+      font-size: 20px !important;
+    }
+
+
+    h1 {
+      font-size: 160px !important;
+      font-family: Concert One;
+      text-transform: uppercase;
+      color: #303030 !important;
+    }
+
     h2 {
+      font-family: Concert One;
+      font-size: 24px;
+      text-transform: uppercase;
+      color: #8a8a8a;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-family: Concert One;
       font-size: 34px;
       text-transform: uppercase;
-      color: #303030;
+      color: #303030 !important;
       font-weight: 600;
       margin-bottom: 30px;
     }
@@ -34,7 +60,7 @@
     }
 
     .jumbotron {
-      background-color: #5348f0ff;
+      background-color: #fff;
       color: #fff;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
@@ -149,7 +175,7 @@
 
     .navbar {
       margin-bottom: 0;
-      background-color: #5348f0ff;
+      background-color: #34eba8;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -304,7 +330,7 @@
 
     #particles-js {
       width: 100%;
-      height: 500px;
+      height: 400px;
       padding-bottom: 0px;
     }
 
@@ -336,45 +362,35 @@
 
   <div class="jumbotron text-center" id=particles-js>
     <!-- particles.js container -->
-    <h1>Hack the Mask</h1>
-    <p>Mask Adapter for 3D printing and laser cutting</p>
+    <h1>Speedy Bio</h1>
+    <h2>incubation in the post for <b>speedy<b/> results</h2>
     <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
     </script>
   </div>
 
   <div class="container text-center" id=about>
-    <h2>About</h2>
-    <p>This design improves on the open source design at fixthemask.com with a 3d-printable nose strap, which improves the fit of the rubber band to the face and reduces pressure on the nose. The design uses a custom clip which ensures the strap can be inserted and not become loose during the course of the day. It also includes a modified rubber mask template which allows for additional length to fit over the nose piece. This design could be mass-manufacturered on-side by using local 3D printers.
+    <h3>Laboratory space is <font color=#EB5054>expensive</font></h3>
+    <p>In a post-COVID world, research labs are stretched to capacity. Social distancing means that <b>fewer researchers</b> can work at the bench at the same time.</p>
+    <p></p>
   </div>
 
   <div class="container text-center" id=about>
-    <h2>Instructions</h2>
-    <h4>Materials:</br>-1 x <a href="https://www.mcmaster.com/1370N52">Rubber Sheet</a></br>-3D printer and filament</h4>
+    <h3>A researcher's time is <font color=#EB5054>valuable</font></h3>
+    <p>Researchers don't want to spend time on repetitive tasks which are easily automatable</p>
   </div>
 
-  <div class="container text-center" id=step1>
-    <div class="panel panel-default">
-      <h3>Step 1 - Component #1 - Nose Adapter</h3>
-      <!-- <script src="custom_js_write.js" width=500px></script> -->
-      <script src="https://embed.github.com/view/3d/EmilyBennett/emilybennett.github.io/master/nose_bridge.stl" width=500px></script>
-      <p>Print the nose clip using a 3D printer.</p>
-    </div>
+  <div class="container text-center" id=about>
+    <h3>Quicker results = <font color=#EB5054>faster innovation</font></h3>
+    <p>Increasing the turnaround speed for building to sequencing allows scientists <b>to make decisions faster</b></p>
   </div>
 
-  <div class="container text-center" id=step2>
-    <div class="panel panel-default">
-    <h3>Step 2 - Component #2 - Rubber Mask Adapter</h3>
-    <img src="modified_mask_template.svg" alt="Cut on lines" width=500px>
-    <p>Print at 100% and draw around template onto a rubber sheet. Cut out with a pair of scissors. Modified design from fixthemask.com. </p>
-    </div>
   </div>
 
-  <div class="container text-center" id=step3>
-    <div class="panel panel-default">
-    <h3>Step 3 - Assemble Components</h3>
-    <script src="https://embed.github.com/view/3d/EmilyBennett/emilybennett.github.io/master/nose_bridge_with_strap.stl" width=500px></script>
-    <p>Hook the strap through the nose clip at each side.</p>
-    </div>
+  <div class="container text-center" id=model>
+    <h3><font color=#EB5054>23 hours saved</font></h3>
+    <p>Increasing the turnaround speed for building to sequencing allows scientists <b>to make decisions faster</b></p>
+    <img src="researcher_diagram.png" width=500px></img>
+    <p></p>
   </div>
 
   </div>
@@ -394,20 +410,20 @@
     particlesJS("particles-js", {
       "particles": {
         "number": {
-          "value": 80,
+          "value": 40,
           "density": {
             "enable": true,
             "value_area": 800
           }
         },
         "color": {
-          "value": "#ffffff"
+          "value": "#34eba8"
         },
         "shape": {
           "type": "circle",
           "stroke": {
             "width": 0,
-            "color": "#000000"
+            "color": "#34eba8"
           },
           "polygon": {
             "nb_sides": 5
@@ -429,7 +445,7 @@
           }
         },
         "size": {
-          "value": 3,
+          "value": 10,
           "random": true,
           "anim": {
             "enable": false,
@@ -441,13 +457,13 @@
         "line_linked": {
           "enable": true,
           "distance": 150,
-          "color": "#ffffff",
+          "color": "#34eba8",
           "opacity": 0.4,
-          "width": 1
+          "width": 4
         },
         "move": {
           "enable": true,
-          "speed": 6,
+          "speed": 4,
           "direction": "none",
           "random": false,
           "straight": false,

@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
   <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
   <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Concert+One&display=swap" rel="stylesheet">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
   <style>
@@ -15,20 +16,38 @@
       font: 400 20px Lato, sans-serif;
       line-height: 1.8;
       color: #818181;
+      background-color: #5348f0ff;
+    }
+
+    h1 {
+      font-family: Concert One;
+      font-size: 100px !important;
+      color: #fff !important;
     }
 
     h2 {
+      font-family: Concert One;
       font-size: 34px;
       text-transform: uppercase;
-      color: #303030;
+      color: #fff;
+      font-weight: 600;
+      margin-bottom: 30px;
+    }
+
+    h3 {
+      font-family: Concert One;
+      font-size: 34px;
+      text-transform: uppercase;
+      color: #303030 !important;
       font-weight: 600;
       margin-bottom: 30px;
     }
 
     h4 {
       font-size: 24px;
+      font-family: Lato, sans-serif;
       line-height: 1.375em;
-      color: #303030;
+      color: #303030 !important;
       font-weight: 400;
       margin-bottom: 30px;
     }
@@ -36,16 +55,20 @@
     .jumbotron {
       background-color: #5348f0ff;
       color: #fff;
-      padding: 100px 25px;
-      font-family: Montserrat, sans-serif;
+      padding: 20px 25px;
+      font-family: Lato, sans-serif;
     }
 
+
     .container-fluid {
-      padding: 60px 50px;
+      background-color: #5348f0ff;
+      color: #fff;
+      padding: 100px 25px;
+      font-family: Lato, sans-serif;
     }
 
     .bg-grey {
-      background-color: #f6f6f6;
+      background-color: #5348f0ff;
     }
 
     .logo-small {
@@ -321,72 +344,62 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-        <a class="navbar-brand" href="#myPage">:)</a>
+        <a class="navbar-brand" href="#myPage"></a>
       </div>
       <div class="collapse navbar-collapse" id="myNavbar">
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#about">About</a></li>
+          <li><a href="#product">PRODUCT</a></li>
         </ul>
         <ul class="nav navbar-nav navbar-right">
-          <li><a href="#instructions">Instructions</a></li>
+          <li><a href="#about">ABOUT</a></li>
         </ul>
       </div>
     </div>
   </nav>
+<div class="container-fluid text-center" id=particles-js>
+  <!-- particles.js container -->
+  <h1>Speedy Bio</h1>
+  <h2>incubation in the post for <b>speedy<b/> results</h2>
+  <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
+  </script>
+</div>
 
-  <div class="jumbotron text-center" id=particles-js>
-    <!-- particles.js container -->
-    <h1>Hack the Mask</h1>
-    <p>Mask Adapter for 3D printing and laser cutting</p>
-    <script src="http://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js">
-    </script>
-  </div>
+<div class="jumbotron" id=about>
+  <h3>Laboratory space is <font color=#EB5054>expensive</font></h3>
+  <p>In a post-COVID world, research labs are stretched to capacity. Social distancing means that <b>fewer researchers</b> can work at the bench at the same time.</p>
+  <p></p>
+</div>
 
-  <div class="container text-center" id=about>
-    <h2>About</h2>
-    <p>This design improves on the open source design at fixthemask.com with a 3d-printable nose strap, which improves the fit of the rubber band to the face and reduces pressure on the nose. The design uses a custom clip which ensures the strap can be inserted and not become loose during the course of the day. It also includes a modified rubber mask template which allows for additional length to fit over the nose piece. This design could be mass-manufacturered on-side by using local 3D printers.
-  </div>
+<div class="jumbotron" id=about>
+  <h3>A researcher's time is <font color=#EB5054>valuable</font></h3>
+  <p>Researchers don't want to spend time on repetitive tasks which are easily automatable</p>
+</div>
 
-  <div class="container text-center" id=about>
-    <h2>Instructions</h2>
-    <h4>Materials:</br>-1 x <a href="https://www.mcmaster.com/1370N52">Rubber Sheet</a></br>-3D printer and filament</h4>
-  </div>
+<div class="jumbotron" style="background-image: url(background1.png); background-size: cover;">
+  <h2>Quicker results = <font color=#EB5054>faster innovation</font></h2>
+  <p>Increasing the turnaround speed for building to sequencing allows scientists <b>to make decisions faster</b></p>
+  <p>We are building a low-cost incubator <b>that you can send in the post</b></p>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+  </br>
+</div>
 
-  <div class="container text-center" id=step1>
-    <div class="panel panel-default">
-      <h3>Step 1 - Component #1 - Nose Adapter</h3>
-      <!-- <script src="custom_js_write.js" width=500px></script> -->
-      <script src="https://embed.github.com/view/3d/EmilyBennett/emilybennett.github.io/master/nose_bridge.stl" width=500px></script>
-      <p>Print the nose clip using a 3D printer.</p>
-    </div>
-  </div>
+<div class="jumbotron" style="background-color: white !important;" id=product>
+  <h3>A <font color=#EB5054>low cost</font> solution</h3>
+  <p><font color=#303030>Researchers working in molecular biology laboratories often need to read the sequence of DNA in bacterial cells. This involves a labour intensive step of growing those cells for 2 days, first overnight on solid media, then in liquid media in order to amplify the DNA so it can be read by a sequencing machine. This takes up a lot of researcher time and laboratory space. We propose that by sending samples in a low-cost insulated envelope with an inbuilt temperature controller we can save time and resources and offer a way for researchers to receive their results faster.</font></p>
+ <script src="https://embed.github.com/view/3d/EmilyBennett/emilybennett.github.io/speedybio/incubot_3d_stl.stl" width=500px style="center"></script></div>
 
-  <div class="container text-center" id=step2>
-    <div class="panel panel-default">
-    <h3>Step 2 - Component #2 - Rubber Mask Adapter</h3>
-    <img src="modified_mask_template.svg" alt="Cut on lines" width=500px>
-    <p>Print at 100% and draw around template onto a rubber sheet. Cut out with a pair of scissors. Modified design from fixthemask.com. </p>
-    </div>
-  </div>
-
-  <div class="container text-center" id=step3>
-    <div class="panel panel-default">
-    <h3>Step 3 - Assemble Components</h3>
-    <script src="https://embed.github.com/view/3d/EmilyBennett/emilybennett.github.io/master/nose_bridge_with_strap.stl" width=500px></script>
-    <p>Hook the strap through the nose clip at each side.</p>
-    </div>
-  </div>
-
-  </div>
-
-
+</div>
 
 
   <footer class="container-fluid text-center">
     <a href="#myPage" title="To Top">
     <span class="glyphicon glyphicon-chevron-up"></span>
   </a>
-    <p>Emily Bennett 2020</p>
+    <p>Emily Bennett James Lawson 2020</p>
   </footer>
 
   <script>
@@ -503,12 +516,26 @@
     });
     var
       count_particles, stats, update;
+    stats = new Stats;
+    stats.setMode(0);
+    stats.domElement.style.position = 'absolute';
+    stats.domElement.style.left = '0px';
+    stats.domElement.style.top = '0px';
+    document.body.appendChild(stats.domElement);
+    count_particles =
+      document.querySelector('.js-count-particles');
+    update = function() {
+      stats.begin();
+      stats.end();
+      if (window.pJSDom[0].pJS.particles && window.pJSDom[0].pJS.particles.array) {
+        count_particles.innerText = window.pJSDom[0].pJS.particles.array.length;
+      }
+      requestAnimationFrame(update);
+    };
+    requestAnimationFrame(update);;
+
 
     $(document).ready(function() {
-
-
-
-      // .style.setAttribute("data-color","0x5efc03");
 
       // Add smooth scrolling to all links in navbar + footer link
       $(".navbar a, footer a[href='#myPage']").on('click', function(event) {
@@ -543,7 +570,6 @@
         });
       });
     })
-
   </script>
 
 </body>
